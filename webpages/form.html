@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Reservation Request</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Reservation Request</h1>
+        </header>
+        <nav>
+    
+        </nav>
+        <main>
+            <div id="incometax">
+                <form method="GET" id="incometax">
+                    <fieldset>
+                        <legend>General Informtion</legend>
+
+                        <div class="form-element">
+                            <label>Arrival Date:</label>
+                            <input type="date" name="arrivaldate" id="arrivaldate" placeholder="Enter Arrival Date" required>
+                            <span id="filter-arrivaldate">
+
+                            </span>
+                        </div>
+                        <div class="form-element">
+                            <label>Nights:</label>
+                            <input type="text" name="nights" id="nights" placeholder="Enter Number of Nights" required>
+                            <span id="filter-nights">
+                                
+                            </span>
+                        </div>
+                        <div class="form-element">
+                            <label>Adults:</label>
+                            <select id="adults">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            
+                        </div>
+                        <div class="form-element">
+                            <label>Children:</label>
+                            <select id="children">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>
+                            Preferences
+                        </legend>
+                        <div class="form-element">
+                            <label>Room Type:</label>
+                            <div class="radio-container">
+                                <div class="radiobox"><input type="radio" name="roomtype" 
+                                    id="standard"
+                                    value="standard" checked>
+                                    <label>Standard</label>
+                                </div>
+
+                                <div class="radiobox"><input type="radio" name="roomtype" 
+                                    id="business"
+                                    value="business">
+                                    <label>Business</label>
+                                </div>
+
+                                <div class="radiobox"><input type="radio" name="roomtype" 
+                                    id="suite"
+                                    value="suite" >
+                                    <label>Suite</label>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="form-element">
+                            <label>Bed Type:</label>
+                            <div class="radio-container">
+                                <div class="radiobox"><input type="radio" name="bedtype" 
+                                    id="king"
+                                    value="king" checked>
+                                    <label>King</label>
+                                </div>
+
+                                <div class="radiobox"><input type="radio" name="bedtype" 
+                                    id="doubledouble"
+                                    value="doubledouble">
+                                    <label>Double Double</label>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="form-element">
+                            <label>Smoking:</label>
+                            <div class="radio-container">
+                                <input type="checkbox" id="smoking" value="smoking">
+                            </div>
+                            
+                        </div>
+                        
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <div class="form-element">
+                            <label>Name:</label>
+                            <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                            <span id="filter-name">
+
+                            </span>
+                        </div>
+
+                        <div class="form-element">
+                            <label>Email:</label>
+                            <input type="text" name="email" id="email" placeholder="Enter Your Email">
+                            <span id="filter-email">
+
+                            </span>
+                        </div>
+
+                        <div class="form-element">
+                            <label>Phone:</label>
+                            <input type="text" name="phone" id="phone" placeholder="Enter Your Phone Number">
+                            <span id="filter-phone">
+
+                            </span>
+                        </div>
+                    </fieldset>
+                    
+
+                    <div class="button">
+                        <input type="submit" name="submit" id="submit" value="Submit Request">
+                    </div>
+
+                    
+                    
+
+                    
+
+                    
+                    
+                </form>    
+                
+            </div>
+        </main>
+        <footer>
+            <p>&copy; Tanmay Raval, N01609499 - 2024</p>
+        </footer>
+    </div>
+    <script src="../js/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Sales Tax Calculator</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Sales Tax Calculator</h1>
+        </header>
+        <nav>
+    
+        </nav>
+        <main>
+            <div id="salestax">
+               <p>Enter Subtotal and Tax Rate and click 'Calculate'</p>
+                <form method="GET" id="salestax-form">
+                    <div class="form-element">
+                        <label>Subtotal:</label>
+                        <input type="text" name="subtotal" id="subtotal" placeholder="Enter Subtotal value" required>
+                    </div>
+
+                    <div class="form-element">
+                        <label>Tax Rate:</label>
+                        <input type="text" name="taxrate" id="taxrate" placeholder="Enter Tax Rate" required>
+                    </div>
+
+                    <div class="form-element">
+                        <label>Sales Tax:</label>
+                        <input type="text" name="salestax" id="saletax"  disabled>
+                    </div>
+
+                    <div class="form-element">
+                        <label>Total:</label>
+                        <input type="text" name="total" id="total" disabled >
+                    </div>
+
+                    <div class="button">
+                        <input type="submit" name="submit" id="submit" value="Calculate">
+                    </div>
+
+                    <div class="button">
+                        <input type="reset" name="clear" id="clear" value="Clear">
+                    </div>
+                    
+                </form>    
+                
+            </div>
+        </main>
+        <footer>
+            <p>&copy; Tanmay Raval, N01609499 - 2024</p>
+        </footer>
+    </div>
+    <script src="../js/salestax.js"></script>
+</body>
+</html>
